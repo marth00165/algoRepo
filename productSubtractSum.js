@@ -3,7 +3,7 @@ let nums = 234
 
 let subtractProductAndSum = (number) => {
 
-    let numbers = number.toString(10).split("").map(function (t) { return parseInt(t) }) 
+    let numbers = number.toString(10).split("").map((t) => { return parseInt(t) }) 
     const getSum = (total, num) => {
             return total + num;   
         }
