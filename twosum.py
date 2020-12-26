@@ -1,14 +1,14 @@
 def twoSum(nums, target):
-    hashMap = {}
+    hashMap = {}  # Map to maintain nums O(1) look up
 
-    for x in nums:
+    for x in nums:  # Iterate through list
 
-        y = target - x
+        y = target - x  # Complement
 
-        if y in hashMap.keys():
+        if y in hashMap.keys():  # if Complement in keys return x, y
             return [x, y]
         else:
-            hashMap[x] = True
+            hashMap[x] = True  # Else add to map and continue
     return []
 
 
